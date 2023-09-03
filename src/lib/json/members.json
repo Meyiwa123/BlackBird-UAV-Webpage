@@ -1,0 +1,87 @@
+[
+    {
+        "name": "PJ",
+        "role": "Club President",
+        "image": "svg/default-user.svg"
+    },
+    {
+        "name": "Felix",
+        "role": "Vice President",
+        "image": "svg/default-user.svg"
+    },
+    {
+        "name": "Meyiwa",
+        "role": "Software Team",
+        "image": "svg/default-user.svg"
+    },
+    {
+        "name":"Jed",
+        "role":"Manufacturing Team",
+        "image":"svg/default-user.svg"
+    },
+    {
+        "name": "Nassim",
+        "role": "Administrative Team",
+        "image": "svg/default-user.svg"
+    },
+    {
+        "name": "Zoltan",
+        "role": "Software Team",
+        "image": "svg/default-user.svg"
+    },
+    {
+        "name": "Akeel",
+        "role": "Administrative Team",
+        "image": "svg/default-user.svg"
+    },
+    {
+        "name": "Albert Robu",
+        "role": "Software Team",
+        "image": "svg/default-user.svg"
+    },
+    {
+        "name": "Balkaran Singh",
+        "role": "Manufacturing Team",
+        "image": "svg/default-user.svg"
+    },
+    {
+        "name": "Ben",
+        "role": "Manufacturing Team",
+        "image": "svg/default-user.svg"
+    },
+    {
+        "name": "Brian",
+        "role": "Software Team",
+        "image": "svg/default-user.svg"
+    },
+    {
+        "name": "Denise",
+        "role": "Administrative Team",
+        "image": "svg/default-user.svg"
+    },
+    {
+        "name": "DJ Van Nice",
+        "role": "Manufacturing Team",
+        "image": "svg/default-user.svg"
+    },
+    {
+        "name": "Dylan T",
+        "role": "Manufacturing Team",
+        "image": "svg/default-user.svg"
+    },
+    {
+        "name": "Ike",
+        "role": "Administrative Team",
+        "image": "svg/default-user.svg"
+    },
+    {
+        "name": "Sam",
+        "role": "Administrative Team",
+        "image": "svg/default-user.svg"
+    },
+    {
+        "name": "Nick",
+        "role": "Administrative Team",
+        "image": "svg/default-user.svg"
+    }
+]
