@@ -1,6 +1,9 @@
 <script lang="ts">
 	import Button, { Label } from '@smui/button';
+	let screenSize: number;
 </script>
+
+<svelte:window bind:innerWidth={screenSize} />
 
 <main>
 	<div>
@@ -15,12 +18,13 @@
 			</Button>
 		</a>
 	</div>
-
-	<div class="right_side">
-		<video autoplay loop muted>
-			<source src="video/bbuav_2023.mp4" type="video/mp4" />
-		</video>
-	</div>
+	{#if screenSize > 768}
+		<div class="right_side">
+			<video autoplay loop muted>
+				<source src="video/bbuav_2023.mp4" type="video/mp4" />
+			</video>
+		</div>
+	{/if}
 </main>
 
 <style>
@@ -44,6 +48,7 @@
 	}
 
 	video {
+		width: 100%;
 		max-width: 750px;
 		box-shadow: 0px 4px 10px #333;
 	}

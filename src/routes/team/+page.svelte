@@ -1,9 +1,13 @@
 <script lang="ts">
 	import TeamMember from '$lib/components/TeamMember.svelte';
+	import MobileTeamMember from '$lib/components/MobileTeamMember.svelte';
 	import members from '$lib/json/members.json';
 
 	let teamMembers = members.sort((a, b) => a.name.localeCompare(b.name));
+	let screenSize: number;
 </script>
+
+<svelte:window bind:innerWidth={screenSize} />
 
 <article>
 	<h1>About Us</h1>
@@ -49,17 +53,21 @@
 			<img src="images/preparation.jpg" alt="team" />
 		</div>
 	</div>
-
 	<h1>Meet Our Team</h1>
-	<div class="container">
-		<div class="grid">
-			{#each teamMembers as member}
-				<div class="cell">
-					<TeamMember {member} />
-				</div>
-			{/each}
+	{#if screenSize < 768}
+		<MobileTeamMember {teamMembers} />
+	{:else}
+		<div class="container">
+			<div class="grid">
+				{#each teamMembers as member}
+					<div class="cell">
+						<TeamMember {member} />
+					</div>
+				{/each}
+			</div>
 		</div>
-	</div>
+	{/if}
+
 	<br /><br />
 </article>
 
